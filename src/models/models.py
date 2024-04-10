@@ -17,9 +17,9 @@ class SpimexTradingResults(Base):
     delivery_basis_id: so.Mapped[str]
     delivery_basis_name: so.Mapped[str]
     delivery_type_id: so.Mapped[str]
-    volume: so.Mapped[int]
-    total: so.Mapped[int]
-    count: so.Mapped[int]
+    volume: so.Mapped[str]
+    total: so.Mapped[str]
+    count: so.Mapped[str]
     date: so.Mapped[date]
     created_on: so.Mapped[datetime] = so.mapped_column(default=datetime.now)
     updated_on: so.Mapped[datetime] = so.mapped_column(default=datetime.now, onupdate=datetime.now)
